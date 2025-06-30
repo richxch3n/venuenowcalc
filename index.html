@@ -52,7 +52,11 @@
         }
         
         .form-input { width: 100%; padding: 10px 12px; border: 1px solid #ced4da; border-radius: 6px; font-size: 14px; background: #ffffff; }
-        .event-categories { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+        .event-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 8px;
+        }
         
         .event-option {
             padding: 10px 8px;
